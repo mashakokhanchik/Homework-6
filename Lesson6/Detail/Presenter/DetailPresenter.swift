@@ -19,7 +19,7 @@ extension DetailPresenter: DetailRouterOutput {}
 
 extension DetailPresenter: DetailInteractorOutput {
 
-  func presentDetails(for artist: Artist) {
+    func presentDetails(for artist: ListViewModel.Artist) {
     let viewModel = transform(model: artist)
     view?.upadateDetails(viewModel)
   }
@@ -33,14 +33,14 @@ private extension DetailPresenter {
     return formatter
   }
 
-  func transform(model: Artist) -> DetailViewModel {
+    func transform(model: ListViewModel.Artist) -> DetailViewModel {
     return DetailViewModel(
       artistName: model.name,
       artistAlbums: model.albums.map { transform(album: $0) }
     )
   }
 
-  func transform(album: Artist.Album) -> DetailViewModel.Album {
+    func transform(album: ListViewModel.Artist.Album) -> DetailViewModel.Album {
     return DetailViewModel.Album(
       title: album.name.uppercased(),
       songList: album.songs.map { transform(song: $0) },
@@ -48,7 +48,7 @@ private extension DetailPresenter {
     )
   }
 
-  func transform(song: Artist.Song) -> DetailViewModel.Album.Song {
+    func transform(song: ListViewModel.Artist.Album.Song) -> DetailViewModel.Album.Song {
 
     return DetailViewModel.Album.Song(
       name: song.name,

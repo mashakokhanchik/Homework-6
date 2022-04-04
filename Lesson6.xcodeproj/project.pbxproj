@@ -23,6 +23,16 @@
 		58CE26B221D76D9400BCE908 /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE26B121D76D9400BCE908 /* DetailPresenterTests.swift */; };
 		B0CE1290242FA55A00211275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE267421D73D4400BCE908 /* AppDelegate.swift */; };
 		B0CE1291242FA65F00211275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CE267821D73D4400BCE908 /* Main.storyboard */; };
+		E1585B1127F6EF6A00D3B710 /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1027F6EF6A00D3B710 /* ArtistService.swift */; };
+		E1585B1327F6F3CA00D3B710 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1227F6F3CA00D3B710 /* List.swift */; };
+		E1585B1527F6F5C500D3B710 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1427F6F5C500D3B710 /* ListViewModel.swift */; };
+		E1585B1727F6FAC800D3B710 /* ModelStubFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1627F6FAC800D3B710 /* ModelStubFactory.swift */; };
+		E1585B1927F6FCB900D3B710 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1827F6FCB900D3B710 /* ListPresenter.swift */; };
+		E1585B1B27F7157F00D3B710 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1A27F7157F00D3B710 /* ListInteractor.swift */; };
+		E1585B1D27F7186500D3B710 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1C27F7186500D3B710 /* ListRouter.swift */; };
+		E1585B1F27F7192F00D3B710 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B1E27F7192F00D3B710 /* ListAssembly.swift */; };
+		E1585B2327F71E4F00D3B710 /* ListAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B2227F71E4F00D3B710 /* ListAssemblyTests.swift */; };
+		E1585B2527F721FE00D3B710 /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1585B2427F721FE00D3B710 /* ListPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +66,16 @@
 		58CE26AD21D7683C00BCE908 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		58CE26AF21D76BAA00BCE908 /* DeatailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailTests.swift; sourceTree = "<group>"; };
 		58CE26B121D76D9400BCE908 /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		E1585B1027F6EF6A00D3B710 /* ArtistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
+		E1585B1227F6F3CA00D3B710 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		E1585B1427F6F5C500D3B710 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E1585B1627F6FAC800D3B710 /* ModelStubFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStubFactory.swift; sourceTree = "<group>"; };
+		E1585B1827F6FCB900D3B710 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		E1585B1A27F7157F00D3B710 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		E1585B1C27F7186500D3B710 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		E1585B1E27F7192F00D3B710 /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
+		E1585B2227F71E4F00D3B710 /* ListAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssemblyTests.swift; sourceTree = "<group>"; };
+		E1585B2427F721FE00D3B710 /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +130,8 @@
 			children = (
 				58CE26AF21D76BAA00BCE908 /* DeatailTests.swift */,
 				58CE26B121D76D9400BCE908 /* DetailPresenterTests.swift */,
+				E1585B2227F71E4F00D3B710 /* ListAssemblyTests.swift */,
+				E1585B2427F721FE00D3B710 /* ListPresenterTests.swift */,
 				58CE268B21D73D4500BCE908 /* Info.plist */,
 			);
 			path = Lesson6Tests;
@@ -118,7 +140,14 @@
 		58CE269421D73F9000BCE908 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				58CE267621D73D4400BCE908 /* ListViewController.swift */,
+				E1585B1027F6EF6A00D3B710 /* ArtistService.swift */,
+				E1585B1627F6FAC800D3B710 /* ModelStubFactory.swift */,
+				E1585B1E27F7192F00D3B710 /* ListAssembly.swift */,
+				E1585B1227F6F3CA00D3B710 /* List.swift */,
+				E1585B0F27F6EA9800D3B710 /* Router */,
+				E1585B0E27F6EA8B00D3B710 /* Interactor */,
+				E1585B0D27F6EA7F00D3B710 /* Presenter */,
+				E1585B0C27F6EA7500D3B710 /* View */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -182,6 +211,39 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		E1585B0C27F6EA7500D3B710 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58CE267621D73D4400BCE908 /* ListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1585B0D27F6EA7F00D3B710 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E1585B1827F6FCB900D3B710 /* ListPresenter.swift */,
+				E1585B1427F6F5C500D3B710 /* ListViewModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E1585B0E27F6EA8B00D3B710 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E1585B1A27F7157F00D3B710 /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E1585B0F27F6EA9800D3B710 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E1585B1C27F7186500D3B710 /* ListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,14 +289,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "Alex Apriamashvili";
 				TargetAttributes = {
 					58CE267021D73D4400BCE908 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1330;
 					};
 					58CE268421D73D4500BCE908 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1330;
 						TestTargetID = 58CE267021D73D4400BCE908;
 					};
 				};
@@ -283,9 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1585B1D27F7186500D3B710 /* ListRouter.swift in Sources */,
 				B0CE1290242FA55A00211275 /* AppDelegate.swift in Sources */,
 				58CE267721D73D4400BCE908 /* ListViewController.swift in Sources */,
+				E1585B1F27F7192F00D3B710 /* ListAssembly.swift in Sources */,
+				E1585B1927F6FCB900D3B710 /* ListPresenter.swift in Sources */,
+				E1585B1527F6F5C500D3B710 /* ListViewModel.swift in Sources */,
+				E1585B1127F6EF6A00D3B710 /* ArtistService.swift in Sources */,
 				58CE26A821D752F000BCE908 /* DetailRouter.swift in Sources */,
+				E1585B1727F6FAC800D3B710 /* ModelStubFactory.swift in Sources */,
+				E1585B1327F6F3CA00D3B710 /* List.swift in Sources */,
 				58CE26A221D752CE00BCE908 /* DetailViewController.swift in Sources */,
 				58CE26AA21D7570300BCE908 /* DetailViewModel.swift in Sources */,
 				58CE269C21D751D300BCE908 /* DetailAssembly.swift in Sources */,
@@ -293,6 +364,7 @@
 				58CE26AE21D7683C00BCE908 /* HeaderView.swift in Sources */,
 				58CE269A21D750FA00BCE908 /* DetailModule.swift in Sources */,
 				58CE26AC21D75C9A00BCE908 /* SongCell.swift in Sources */,
+				E1585B1B27F7157F00D3B710 /* ListInteractor.swift in Sources */,
 				58CE26A421D752D900BCE908 /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +375,8 @@
 			files = (
 				58CE26B221D76D9400BCE908 /* DetailPresenterTests.swift in Sources */,
 				58CE26B021D76BAA00BCE908 /* DeatailTests.swift in Sources */,
+				E1585B2527F721FE00D3B710 /* ListPresenterTests.swift in Sources */,
+				E1585B2327F71E4F00D3B710 /* ListAssemblyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +436,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -423,6 +498,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -465,7 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = GeekBrains.Lesson6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -483,7 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = GeekBrains.Lesson6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -503,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = GeekBrains.Lesson6Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lesson6.app/Lesson6";
 			};
@@ -524,7 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = GeekBrains.Lesson6Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lesson6.app/Lesson6";
 			};

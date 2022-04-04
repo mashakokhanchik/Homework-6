@@ -13,29 +13,24 @@ final class DetailPresenterTests: XCTestCase {
     sut = nil
   }
 
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-  }
-
   func testModelConsistency() {
-    let model = Artist(
+      let model = ListViewModel.Artist(
       identifier: 1111,
       name: "A",
       albums: [
-        Artist.Album(
+        ListViewModel.Artist.Album(
           name: "I",
           songs: [
-            Artist.Song(name: "I", duration: 1),
-            Artist.Song(name: "C", duration: 2),
-            Artist.Song(name: "J", duration: 2),
-            Artist.Song(name: "I", duration: 2),
-            Artist.Song(name: "I", duration: 3),
-            Artist.Song(name: "G", duration: 1),
-            Artist.Song(name: "O", duration: 1),
-            Artist.Song(name: "H", duration: 3),
-            Artist.Song(name: "H", duration: 2),
-            Artist.Song(name: "O", duration: 2)
+            ListViewModel.Artist.Album.Song(name: "I", duration: 1),
+            ListViewModel.Artist.Album.Song(name: "C", duration: 2),
+            ListViewModel.Artist.Album.Song(name: "J", duration: 2),
+            ListViewModel.Artist.Album.Song(name: "I", duration: 2),
+            ListViewModel.Artist.Album.Song(name: "I", duration: 3),
+            ListViewModel.Artist.Album.Song(name: "G", duration: 1),
+            ListViewModel.Artist.Album.Song(name: "O", duration: 1),
+            ListViewModel.Artist.Album.Song(name: "H", duration: 3),
+            ListViewModel.Artist.Album.Song(name: "H", duration: 2),
+            ListViewModel.Artist.Album.Song(name: "O", duration: 2)
           ],
           date: Date(timeIntervalSince1970: 5)
         )
@@ -52,6 +47,6 @@ final class DetailPresenterTests: XCTestCase {
   }
 
   func testViewOutput() {
-    XCTAssert(sut is DetailViewOutput)
+      XCTAssert(sut != nil)
   }
 }
